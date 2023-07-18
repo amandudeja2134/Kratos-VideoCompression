@@ -1,0 +1,21 @@
+<launch>
+  <node
+    pkg="cv_basics"
+    type="cam1_pub.py"
+    name="cam1_pub"
+    output="screen"
+  />
+  <node
+    pkg="cv_basics"
+    type="cam2_pub.py"
+    name="cam2_pub"
+    output="screen"
+  />
+   <node
+    pkg="cv_basics"
+    type="cam3_pub.py"
+    name="cam3_pub"
+    output="screen"
+  />
+
+</launch>

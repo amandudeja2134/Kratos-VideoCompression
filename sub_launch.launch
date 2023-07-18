@@ -1,0 +1,9 @@
+<launch>
+  <node
+    pkg="cv_basics"
+    type="cam1_sub.py"
+    name="cam1_sub"
+    output="screen"
+  />
+
+</launch>
