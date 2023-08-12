@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
-# Basics ROS program to publish real-time streaming 
-# video from your built-in webcam
-# Author:
-# - Addison Sears-Collins
-# - https://automaticaddison.com
+
  
-# Import the necessary libraries
+
 import rospy # Python library for ROS
 from sensor_msgs.msg import Image # Image is the message type
 from cv_bridge import CvBridge # Package to convert between ROS and OpenCV Images
@@ -13,8 +9,7 @@ import cv2 # OpenCV library
   
 def publish_message():
  
-  # Node is publishing to the video_frames topic using 
-  # the message type Image
+  
   pub = rospy.Publisher('video_frame1', Image, queue_size=10)
      
   # Tells rospy the name of the node.
@@ -41,9 +36,6 @@ def publish_message():
   # While ROS is still running.
   while not rospy.is_shutdown():
      
-      # Capture frame-by-frame
-      # This method returns True/False as well
-      # as the video frame.
       ret, frame1 = cam1.read()
       frame1_c = resize_frame(frame1,640,480)
          
