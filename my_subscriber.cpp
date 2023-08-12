@@ -2,11 +2,8 @@
 #include <image_transport/image_transport.h>
 #include <opencv2/highgui/highgui.hpp>
 #include <cv_bridge/cv_bridge.h>
- 
-// Author: Addison Sears-Collins
-// Website: https://automaticaddison.com
-// Description: A basic image subscriber for ROS in C++
-// Date: June 27, 2020
+
+
  
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
