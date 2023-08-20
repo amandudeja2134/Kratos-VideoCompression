@@ -6,4 +6,18 @@
     output="screen"
   />
 
+ <node
+    pkg="cv_basics"
+    type="cam2_sub.py"
+    name="cam2_sub"
+    output="screen"
+  />
+
+ <node
+    pkg="cv_basics"
+    type="cam3_sub.py"
+    name="cam3_sub"
+    output="screen"
+  />
+
 </launch>
